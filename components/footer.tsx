@@ -14,8 +14,7 @@ const navLinks = [
 const socialLinks = [
   { icon: Github, href: "https://github.com/OXYGEN1511", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/tushar-ray15/", label: "LinkedIn" },
-  // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "tusharray1511@gmail.com", label: "Email" },
+  { icon: Mail, href: "mailto:tusharray1511@gmail.com", label: "Email" },
 ];
 
 export function Footer() {
@@ -40,8 +39,7 @@ export function Footer() {
               <span className="text-primary">.</span>
             </Link>
             <p className="text-muted-foreground max-w-xs">
-              Full Stack Developer building scalable web and mobile applications
-              with modern technologies.
+              Full-Stack Developer specializing in Java, Spring Boot, React.js, .NET Core, Web APIs, and SQL.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -78,8 +76,12 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Contact</h4>
             <div className="space-y-3 text-muted-foreground">
-              <p>tusharray1511@gmail.com</p>
-              <p>India</p>
+              <p>
+                <a href="mailto:tusharray1511@gmail.com" className="hover:text-primary transition-colors">
+                  tusharray1511@gmail.com
+                </a>
+              </p>
+              <p>Bhopal, Madhya Pradesh, India</p>
               <p className="text-primary font-medium">Available for opportunities</p>
             </div>
           </div>
@@ -87,17 +89,9 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border">
-          {/* <p className="text-sm text-muted-foreground flex items-center gap-1">
-            &copy; {currentYear} All rights reserved. Built with{" "}
-            <Heart className="w-3 h-3 text-red-500 fill-red-500" /> using{" "}
-            <Link
-              href="https://nextjs.org"
-              target="_blank"
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              Next.js
-            </Link>
-          </p> */}
+          <p className="text-sm text-muted-foreground">
+            &copy; {currentYear} Tushar Ray. All rights reserved.
+          </p>
 
           <button
             onClick={scrollToTop}

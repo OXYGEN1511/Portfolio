@@ -9,26 +9,26 @@ export function AboutSection() {
   const highlights = [
     {
       icon: Code,
-      title: "Clean Code",
-      description: "Writing maintainable, well-documented code following best practices",
+      title: "Clean Architecture & APIs",
+      description: "Building scalable services with Java, Spring Boot, .NET Core, ASP.NET, and REST Web APIs",
       gradient: "from-blue-500/20 to-cyan-500/20",
     },
     {
       icon: Rocket,
-      title: "Fast Learner",
-      description: "Quick to adapt and always exploring new technologies",
+      title: "Gov & Enterprise Delivery",
+      description: "Modernizing government applications at Madgaon, job portals & SBI ePay payment integration",
       gradient: "from-purple-500/20 to-pink-500/20",
     },
     {
       icon: Target,
-      title: "Problem Solver",
-      description: "Love tackling complex challenges with creative solutions",
+      title: "200+ LeetCode & 5-Star",
+      description: "Solved 200+ LeetCode problems & achieved 5-Star Problem Solving rating on HackerRank",
       gradient: "from-orange-500/20 to-red-500/20",
     },
     {
       icon: Heart,
-      title: "Team Player",
-      description: "Effective collaborator with strong communication skills",
+      title: "Certified & Active",
+      description: "Certified in Java & React (Udemy), Spring Boot (Scalar), and active GDSC member",
       gradient: "from-green-500/20 to-emerald-500/20",
     },
   ];
@@ -60,7 +60,7 @@ export function AboutSection() {
               <h3 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
                 Crafting digital experiences with{" "}
                 <span className="bg-gradient-to-r from-primary to-chart-2 bg-clip-text text-transparent">
-                  code & creativity
+                  code & clean architecture
                 </span>
               </h3>
             </ScrollReveal>
@@ -68,53 +68,48 @@ export function AboutSection() {
             <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
               <ScrollReveal delay={200}>
                 <p>
-                  I&apos;m a passionate software developer with a{" "}
+                  I&apos;m a Full-Stack Developer with a{" "}
                   <span className="text-foreground font-semibold">
-                    BTech in Computer Science
+                    B.Tech in Computer Science (GPA: 7.91/10)
                   </span>{" "}
-                  and 1 year of professional experience building scalable
-                  applications. I thrive at the intersection of elegant code and
-                  exceptional user experiences.
+                  from{" "}
+                  <span className="text-foreground font-semibold">
+                    Sagar Institute of Research and Technology Excellence
+                  </span>
+                  , Bhopal. I specialize in developing modern enterprise applications, robust Web APIs, and responsive frontends.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal delay={300}>
                 <p>
-                  My journey in tech has taken me across the full stack — from
-                  crafting robust backend services with{" "}
+                  At{" "}
                   <span className="text-foreground font-semibold">
-                    Java, Spring Boot, Python, and FastAPI
-                  </span>{" "}
-                  to building responsive frontends with{" "}
-                  <span className="text-foreground font-semibold">
-                    React and Next.js
+                    Aroosha Technologies
                   </span>
-                  .
+                  , I contribute to government projects at Madgaon, modernizing and maintaining mission-critical applications using{" "}
+                  <span className="text-foreground font-semibold">
+                    .NET, ASP.NET Core, Web APIs, Java, and Spring Boot
+                  </span>
+                  , while managing CI/CD pipelines, IIS configuration, and SQL Server databases.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal delay={400}>
                 <p>
-                  I&apos;ve also ventured into mobile development with{" "}
-                  <span className="text-foreground font-semibold">Flutter</span>,
-                  successfully publishing{" "}
-                  <Link
-                    href="https://play.google.com/store/apps/details?id=fitara.ai"
-                    target="_blank"
-                    className="text-primary hover:underline font-semibold inline-flex items-center gap-1"
-                  >
-                    Fitara AI
-                    <Zap className="w-4 h-4" />
-                  </Link>{" "}
-                  on the Google Play Store — showcasing my ability to deliver
-                  end-to-end products.
+                  Previously at{" "}
+                  <span className="text-foreground font-semibold">Eulogik</span>,
+                  I developed full-stack web solutions using{" "}
+                  <span className="text-foreground font-semibold">
+                    React.js, RESTful APIs, and relational databases
+                  </span>
+                  . With a strong grasp of JWT & RBAC security, OOP, and system design, I ensure clean, performant, and secure software delivery.
                 </p>
               </ScrollReveal>
             </div>
 
             <ScrollReveal delay={500}>
               <a
-                href="/resume.pdf"
+                href="/Tusharray.Resume.pdf"
                 download="Tusharray.Resume.pdf"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary hover:bg-secondary/80 text-foreground font-medium transition-all group"
               >

@@ -10,7 +10,7 @@ import { MagneticButton } from "./magnetic-button";
 const socialLinks = [
   {
     name: "GitHub",
-    handle: "@yourusername",
+    handle: "@OXYGEN1511",
     href: "https://github.com/OXYGEN1511",
     icon: Github,
     gradient: "from-gray-500 to-gray-600",
@@ -18,20 +18,12 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    handle: "Tushar Ray",
+    handle: "tushar-ray15",
     href: "https://www.linkedin.com/in/tushar-ray15/",
     icon: Linkedin,
     gradient: "from-blue-500 to-blue-600",
     bgGradient: "from-blue-500/10 to-blue-600/10",
   },
-  // {
-  //   name: "Twitter",
-  //   handle: "@yourusername",
-  //   href: "https://twitter.com",
-  //   icon: Twitter,
-  //   gradient: "from-sky-400 to-sky-500",
-  //   bgGradient: "from-sky-400/10 to-sky-500/10",
-  // },
 ];
 
 export function ContactSection() {
@@ -150,11 +142,11 @@ export function ContactSection() {
 
         {/* Location */}
         <ScrollReveal delay={600}>
-          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+          <div className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground text-center">
             <MapPin className="w-4 h-4 text-primary" />
-            <span className="text-sm">Based in India</span>
+            <span className="text-sm">Bhopal, Madhya Pradesh, India</span>
             <span className="text-muted-foreground/50">|</span>
-            <span className="text-sm">Available for Remote Work</span>
+            <span className="text-sm">Open to Remote & On-site Roles</span>
           </div>
         </ScrollReveal>
       </div>

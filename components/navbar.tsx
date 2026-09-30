@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import { ThemeToggle } from "./theme-toggle";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -78,27 +79,32 @@ export function Navbar() {
           </div>
         </nav>
 
-        {/* CTA Button */}
-        <Link
-          href="#contact"
-          className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-foreground text-background rounded-full text-sm font-medium hover:bg-foreground/90 transition-all group"
-        >
-          Hire Me
-          <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-        </Link>
+        {/* Action Controls: Theme Toggle & CTA */}
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden p-2.5 rounded-xl bg-secondary/50 border border-border text-foreground hover:bg-secondary transition-colors"
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? (
-            <X className="w-5 h-5" />
-          ) : (
-            <Menu className="w-5 h-5" />
-          )}
-        </button>
+          {/* CTA Button */}
+          <Link
+            href="#contact"
+            className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-foreground text-background rounded-full text-sm font-medium hover:bg-foreground/90 transition-all group shadow-sm"
+          >
+            Hire Me
+            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </Link>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2.5 rounded-xl bg-secondary/50 border border-border text-foreground hover:bg-secondary transition-colors"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-5 h-5" />
+            ) : (
+              <Menu className="w-5 h-5" />
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -125,10 +131,14 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
+          <div className="flex items-center justify-between px-4 py-2.5 rounded-xl bg-secondary/50 border border-border mt-2">
+            <span className="text-sm font-medium text-foreground">Switch Theme</span>
+            <ThemeToggle />
+          </div>
           <Link
             href="#contact"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="mt-4 flex items-center justify-center gap-2 px-5 py-3 bg-foreground text-background rounded-xl text-center font-medium hover:bg-foreground/90 transition-colors"
+            className="mt-3 flex items-center justify-center gap-2 px-5 py-3 bg-foreground text-background rounded-xl text-center font-medium hover:bg-foreground/90 transition-colors"
           >
             Hire Me
             <ArrowUpRight className="w-4 h-4" />

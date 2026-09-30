@@ -6,9 +6,10 @@ import { MagneticButton } from "./magnetic-button";
 import { AnimatedCounter } from "./animated-counter";
 
 const roles = [
-  "Full Stack Developer",
-  "Backend Engineer",
-  "Flutter Developer",
+  "Full-Stack Developer",
+  "Java & Spring Boot Engineer",
+  ".NET Core & Web API Developer",
+  "React & Next.js Developer",
 ];
 
 export function HeroSection() {
@@ -79,14 +80,14 @@ export function HeroSection() {
       {/* Main content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Status badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-6 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in-up">
-          {/* <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in-up">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
           </span>
-          <span className="text-sm font-medium text-muted-foreground">
+          <span className="text-sm font-medium text-foreground">
             Available for opportunities
-          </span> */}
+          </span>
         </div>
 
         {/* Main heading */}
@@ -104,13 +105,9 @@ export function HeroSection() {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in-up stagger-3">
-          BTech CSE graduate with{" "}
-          <span className="text-foreground font-semibold">1 year of professional experience</span>.
-          I build scalable web and mobile applications with modern technologies.
-          <span className="inline-flex items-center gap-1 ml-1 text-primary">
-            <Sparkles className="w-4 h-4" />
-            Published app on Google Play Store
-          </span>
+          Full-Stack Developer with hands-on experience in{" "}
+          <span className="text-foreground font-semibold">Java, Spring Boot, React.js, .NET Core, Web APIs, and SQL</span>.
+          Experienced in modernizing enterprise legacy applications, integrating third-party services, and delivering end-to-end scalable solutions with clean architecture.
         </p>
 
         {/* CTA Buttons */}
@@ -129,9 +126,9 @@ export function HeroSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-16 animate-fade-in-up stagger-5">
           {[
             { value: 1, suffix: "+", label: "Years Experience" },
+            { value: 200, suffix: "+", label: "LeetCode Solved" },
+            { value: 5, suffix: "★", label: "HackerRank Solving" },
             { value: 10, suffix: "+", label: "Projects Completed" },
-            { value: 8, suffix: "+", label: "Technologies" },
-            { value: 1, suffix: "", label: "Published App" },
           ].map((stat, index) => (
             <div
               key={index}
@@ -150,7 +147,7 @@ export function HeroSection() {
           {[
             { icon: Github, href: "https://github.com/OXYGEN1511", label: "GitHub" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/tushar-ray15/", label: "LinkedIn" },
-            { icon: Mail, href: "tusharray1511@gmail.com", label: "Email" },
+            { icon: Mail, href: "mailto:tusharray1511@gmail.com", label: "Email" },
           ].map((social, index) => (
             <a
               key={index}
