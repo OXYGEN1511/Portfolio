@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Github, Linkedin, Mail, ArrowDown, Play, Sparkles } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowDown, Play, Sparkles, Download } from "lucide-react";
 import { MagneticButton } from "./magnetic-button";
 import { AnimatedCounter } from "./animated-counter";
 
@@ -119,6 +119,15 @@ export function HeroSection() {
           <MagneticButton href="#contact" variant="outline">
             <Mail className="w-4 h-4" />
             Get In Touch
+          </MagneticButton>
+          <MagneticButton
+            href="/Tushar_Ray_Resume.pdf"
+            download="Tushar_Ray_Resume.pdf"
+            variant="ghost"
+            className="border border-border hover:border-primary/50"
+          >
+            <Download className="w-4 h-4" />
+            Download CV
           </MagneticButton>
         </div>
 

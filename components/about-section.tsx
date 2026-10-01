@@ -109,8 +109,8 @@ export function AboutSection() {
 
             <ScrollReveal delay={500}>
               <a
-                href="/Tusharray.Resume.pdf"
-                download="Tusharray.Resume.pdf"
+                href="/Tushar_Ray_Resume.pdf"
+                download="Tushar_Ray_Resume.pdf"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary hover:bg-secondary/80 text-foreground font-medium transition-all group"
               >
                 <Download className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
